@@ -5,11 +5,14 @@ public class Game {
     public Game () 
     {
         mountainLevel.StartMessage = "You have arrived at the base of a mountain";
-        mountainlevel.objects = new string []{};
+        mountainLevel.objects();
     }
 
 public void Start (){
-    
+
+Console.WriteLine("Plaease enter your name");
+PlayerBase.playerName = Console.ReadLine();
+Console.WriteLine("Welcome " + PlayerBase.playerName + ".")
 }
 
 }

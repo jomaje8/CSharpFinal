@@ -6,7 +6,7 @@ public class PlayerBase{
     public string[] weaponInventory;
     public int weaponDamage;
     public string[] itemInventory;
-
+    public static string playerName;
 
     public PlayerBase()
     {
