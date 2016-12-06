@@ -4,7 +4,10 @@ public class Game {
     public static bool canPlay = true;
     public Game () 
     {
-        mountainLevel.StartMessage = "You have arrived at the base of a mountain";
+        //Create player and ask for name//
+        //Start game using switch statement and enum//
+        //Create game timer//
+
         
     }
 
