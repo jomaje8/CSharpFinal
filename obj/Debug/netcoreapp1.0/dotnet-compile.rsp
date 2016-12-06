@@ -1,5 +1,5 @@
---temp-output:C:\Users\Jordan\Documents\School\Scripting\C#Final\obj\Debug\netcoreapp1.0\
---out:C:\Users\Jordan\Documents\School\Scripting\C#Final\bin\Debug\netcoreapp1.0\C#Final.dll
+--temp-output:c:\Users\Jordan\Documents\School\Scripting\C#Final\obj\Debug\netcoreapp1.0\
+--out:c:\Users\Jordan\Documents\School\Scripting\C#Final\bin\Debug\netcoreapp1.0\C#Final.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -87,4 +87,15 @@
 --reference:C:\Users\Jordan\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Jordan\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Jordan\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
-C:\Users\Jordan\Documents\School\Scripting\C#Final\Program.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Program.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\Enemy\EnemyBase.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\LevelBase\LevelBase.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\LevelBase\mountainLevel.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\MagicBase\MagicBase.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PlayerBase\PlayerBase.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\HealthPowerUp.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\PowerUpsBase.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\ShieldPowerUp.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\WeaponBase\Weapon.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\WeaponBase\WeaponBase.cs

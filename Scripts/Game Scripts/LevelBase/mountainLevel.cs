@@ -1,6 +1,8 @@
 public class mountainLevel: LevelBase {
  
-        enviornment = new string[] {};
-       public static string[] objects = {};
-    
+        
+        public class objects {
+
+        }
+       public object myObjects = new object ();    
 }

@@ -7,8 +7,8 @@
 -debug:portable
 -nostdlib
 -nologo
-"C:\Users\Jordan\Documents\School\Scripting\C#Final\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\Jordan\Documents\School\Scripting\C#Final\bin\Debug\netcoreapp1.0\C#Final.dll"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"c:\Users\Jordan\Documents\School\Scripting\C#Final\bin\Debug\netcoreapp1.0\C#Final.dll"
 -r:"C:\Users\Jordan\.nuget\packages\Microsoft.CSharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll"
 -r:"C:\Users\Jordan\.nuget\packages\Microsoft.VisualBasic\10.0.1\ref\netstandard1.1\Microsoft.VisualBasic.dll"
 -r:"C:\Users\Jordan\.nuget\packages\Microsoft.Win32.Primitives\4.0.1\ref\netstandard1.3\Microsoft.Win32.Primitives.dll"
@@ -82,4 +82,15 @@
 -r:"C:\Users\Jordan\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\Jordan\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\Jordan\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
-"C:\Users\Jordan\Documents\School\Scripting\C#Final\Program.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Program.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\Enemy\EnemyBase.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\LevelBase\LevelBase.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\LevelBase\mountainLevel.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\MagicBase\MagicBase.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PlayerBase\PlayerBase.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\HealthPowerUp.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\PowerUpsBase.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\ShieldPowerUp.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\WeaponBase\Weapon.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\WeaponBase\WeaponBase.cs"
