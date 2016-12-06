@@ -10,9 +10,5 @@ public class Game {
 
 public void Start (){
 
-Console.WriteLine("Plaease enter your name");
-PlayerBase.playerName = Console.ReadLine();
-Console.WriteLine("Welcome " + PlayerBase.playerName + ".");
-}
 
 }
