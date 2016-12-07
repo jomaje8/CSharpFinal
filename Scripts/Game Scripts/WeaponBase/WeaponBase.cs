@@ -8,10 +8,9 @@ public class WeaponBase {
         
         listOfWeapons = new List<Weapon>();
 
-        ChangeList();
     }
 
-    private void ChangeList () {
+    private void ChangeList (string name , int power) {
         Console.WriteLine(listOfWeapons.Count);
 
         foreach(Weapon weapon in listOfWeapons) {
@@ -25,6 +24,6 @@ public class WeaponBase {
 
         listOfWeapons.Add(newWeapon);
 
-        ChangeList();
+        ChangeList("sword", 20);
     }
 }

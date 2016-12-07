@@ -7,10 +7,9 @@ public class MagicBase {
     public void RunList () {
         listOfMagic = new List<Magic>();
 
-        ChangeList();
     }
 
-    private void ChangeList () {
+    private void ChangeList (string name, int power) {
         Console.WriteLine(listOfMagic.Count);
           foreach(Magic magic in listOfMagic) {
             Console.WriteLine(magic.name + " is the name of your weapon.");
