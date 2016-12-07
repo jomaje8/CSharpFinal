@@ -12,11 +12,17 @@ public class MagicBase {
 
     private void ChangeList () {
         Console.WriteLine(listOfMagic.Count);
+          foreach(Magic magic in listOfMagic) {
+            Console.WriteLine(magic.name + " is the name of your weapon.");
+            Console.WriteLine(magic.power + " is the power of your weapon.");
+        }
 
 
     }
 
     Magic newMagic = new Magic();
+    newMagic.name = Console.ReadLine();
+    newMagic.power = int.Parse(Console.ReadLine());
 
     listOfMagic.Add(newMagic);
 

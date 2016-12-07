@@ -14,44 +14,21 @@ public class PlayerBase{
 
         switch(playerType) {
             case "Dragon":
-            Console.WriteLine("Well hello mighty creature!");
-            PlayerBase.health = 100;
-            PlayerBase.armor = 200;
-            PlayerBase.power = 100;
-            public string Magic.name = "fire";
             break;
 
             case "Werewolf":
-            Console.WriteLine("Oh my, Look at those teeth!");
-            PlayerBase.health = 100;
-            PlayerBase.armor = 75;
-            PlayerBase.power = 100;
-            public string Magic.name = "Bite";
 
             break;
 
-            case "Yeti":
-            Console.WriteLine("So you do exist!");
-            PlayerBase.health = 100;
-            PlayerBase.armor = 75;
-            PlayerBase.power = 100;
-            public string Magic.name = "Freeze";
+            case "Yeti"
 
             break;
 
             case "Imp":
-            Console.WriteLine("Why you little devil, Welcome!"):
-            PlayerBase.health = 100;
-            PlayerBase.armor = 25;
-            PlayerBase.power = 50;
-            public string Magic.name = "Multiply";
             break;
 
             case "Human":
-            Console.WriteLine("A human? HaHa, Good Luck!");
-            PlayerBase.health = 100;
-            PlayerBase.armor = 15;
-            PlayerBase.power = 25;
+
             break;
             
             default:
