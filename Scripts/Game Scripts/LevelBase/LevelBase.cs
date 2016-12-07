@@ -28,7 +28,7 @@ public class LevelBase {
         if (i < objects.Length){
             Console.WriteLine("You've fallen into " + objects[i]);
             if(objects[i] == "dark wet pit"){
-                myLostLife.LooseLifes();
+                myLostLife.LoseLife();
             }
         }
         else{
@@ -36,6 +36,6 @@ public class LevelBase {
         }
         
     }
-    public LooseLife myLostLife = new LooseLife();
+    public LifeCount myLostLife = new LoseLife();
 
 }

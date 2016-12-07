@@ -12,12 +12,12 @@ public class MagicBase {
     private void ChangeList (string name, int power) {
         Console.WriteLine(listOfMagic.Count);
           foreach(Magic magic in listOfMagic) {
-            Console.WriteLine(magic.name + " is the name of your weapon.");
-            Console.WriteLine(magic.power + " is the power of your weapon.");
+            Console.WriteLine(magic.name + " is the name of your spell.");
+            Console.WriteLine(magic.power + " is the power of your spell.");
         }
 
 
-    }
+    
 
     Magic newMagic = new Magic();
     newMagic.name = Console.ReadLine();
@@ -25,7 +25,8 @@ public class MagicBase {
 
     listOfMagic.Add(newMagic);
 
-    ChangeList();
+    ChangeList("Fire", 20);
 // create damage done by different forms of magic//
+    }
     
 }
