@@ -36,6 +36,6 @@ public class LevelBase {
         }
         
     }
-    public LifeCount myLostLife = new LoseLife();
+    public LifeCount myLostLife = new LifeCount();
 
 }

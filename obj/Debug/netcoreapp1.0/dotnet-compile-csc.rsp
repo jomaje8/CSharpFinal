@@ -87,6 +87,7 @@
 "c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\Enemy\EnemyBase.cs"
 "c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\LevelBase\LevelBase.cs"
 "c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\LevelBase\mountainLevel.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\MagicBase\Magic.cs"
 "c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\MagicBase\MagicBase.cs"
 "c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PlayerBase\PlayerBase.cs"
 "c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\HealthPowerUp.cs"
@@ -94,3 +95,5 @@
 "c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\ShieldPowerUp.cs"
 "c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\WeaponBase\Weapon.cs"
 "c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\WeaponBase\WeaponBase.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\GameFuntions.cs\GamestatusBase.cs"
+"c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\GameFuntions.cs\LifeCount.cs"

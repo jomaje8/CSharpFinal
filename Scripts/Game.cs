@@ -1,21 +1,15 @@
 using System;
 public class Game
 {
+    public int health;
+    public static PlayerBase player = new PlayerBase();
+    public static WeaponBase weapon = new WeaponBase();
     public static Action StartGame;
     public static bool canPlay = true;
-    public Game()
-    {
-        //Create player and ask for name//
-        //Start game using switch statement and enum//
-        //Create game timer//
+       public void Start()
+    {}
 
-
-    }
-
-    public void Start()
-    {
-
- private string gameStatus = "start";
+        private string gameStatus = "start";
     public GameStatusBase.GameStates toEnum;
     private void Continue()
     {
@@ -52,10 +46,9 @@ public class Game
             case GameStatusBase.GameStates.Fight:
                 while (true)
                 {
-                    mountain.Enter();
+                    Cave.Enter();
                     Random randomNum = new Random();
                     // This is supposed to name Cave as a new level, Then you try to do the level.
-                    mountainLevel.Cave(randomNum.Next(0, mountain.objects.Length));
                     GameTimer();
                     Continue();
                 }
@@ -64,29 +57,18 @@ public class Game
                 Console.WriteLine("I'm sorry i don't understand what that means.");
                 Continue();
                 break;
+             }
+
         }
 
-    }
+           private LevelBase Cave = new LevelBase();
 
-
-    //Game Levels
-    private LevelBase mountain = new mountainLevel();
-    public static LevelBase Underwater = new LevelBase();
-
-    // game powerups?
-
-    // Game weapons?
-
-    // game timer
-    public static void GameTimer()
-    {
+// game timer
+   public static void GameTimer () {
         System.Threading.Thread.Sleep(2000);
     }
-}
+    public int score;
 
-
-
-private int score;
     }
+    
 
-}
