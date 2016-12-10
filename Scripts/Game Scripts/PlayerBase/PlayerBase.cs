@@ -2,7 +2,7 @@ using System;
 public class PlayerBase{
     public string playerType;
     public string playerName;
-    public int armor;
+    public static int armor;
 
      public void typeSelection(){
     Console.WriteLine("What type of creature are you?");
@@ -11,27 +11,27 @@ public class PlayerBase{
     
      switch(playerType) {
          case "Centaur":
-         Console.WriteLine("What is Resolve?");
+         Console.WriteLine("Nice Pants");
          Console.WriteLine("Health: " + (armor + 60));
          break;
 
          case "Werewolf":
-         Console.WriteLine("Class doesn't have a price.");
+         Console.WriteLine("Wow, what nice teeth you have");
          Console.WriteLine("Health: " + (armor + 90));
          break;
 
          case "Yeti":
-         Console.WriteLine("Shouldn't you wear a shirt?");
+         Console.WriteLine("Snowcone?");
          Console.WriteLine("Health: " + (armor + 100));
          break;
 
          case "Imp":
-         Console.WriteLine("Small body, Big Heart.");
+         Console.WriteLine("Ah, you little devil");
          Console.WriteLine("Health: " + (armor + 5));
          break;
 
          case "Human":
-         Console.WriteLine("");
+         Console.WriteLine("Oh, um, Good Luck?");
          Console.WriteLine("Health " + (armor + 10));
          break;
 
@@ -50,7 +50,7 @@ public class PlayerBase{
             {
                 Console.WriteLine("Um, You said nothing, try again.");
             } else {
-                Game.StartGame();
+                Console.WriteLine("Welcome " + name + " prepare for your journey.");
             }
         }
    

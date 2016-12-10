@@ -89,15 +89,12 @@
 --reference:C:\Users\Jordan\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 c:\Users\Jordan\Documents\School\Scripting\C#Final\Program.cs
 c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game.cs
-c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\Enemy\EnemyBase.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\DropItems\Drop.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\Items\Items.cs
+c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\Items\listItems.cs
 c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\LevelBase\LevelBase.cs
-c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\LevelBase\mountainLevel.cs
-c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\MagicBase\Magic.cs
 c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\MagicBase\MagicBase.cs
 c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PlayerBase\PlayerBase.cs
-c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\HealthPowerUp.cs
-c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\PowerUpsBase.cs
-c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\PowerUpsBase\ShieldPowerUp.cs
 c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\WeaponBase\Weapon.cs
 c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\Game Scripts\WeaponBase\WeaponBase.cs
 c:\Users\Jordan\Documents\School\Scripting\C#Final\Scripts\GameFuntions.cs\GamestatusBase.cs

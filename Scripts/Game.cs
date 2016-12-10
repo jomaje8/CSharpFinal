@@ -1,74 +1,73 @@
 using System;
+
 public class Game
 {
-    public int health;
+    private LevelBase Level = new LevelBase();
     public static PlayerBase player = new PlayerBase();
     public static WeaponBase weapon = new WeaponBase();
-    public static Action StartGame;
-    public static bool canPlay = true;
-       public void Start()
-    {}
-
-        private string gameStatus = "start";
-    public GameStatusBase.GameStates toEnum;
-    private void Continue()
+    public void MyGame()
+    {
+        player.typeSelection();
+        player.NameFunction();
+        MagicBase.pickPower();
+        Play();
+    }
+    private string gameFunction = "Start";
+    private GameStatusBase.GameStates toEnum;
+    public void Play()
     {
 
         switch (toEnum)
         {
+            case GameStatusBase.GameStates.Start:
+                Console.WriteLine("To Continue: Play, End");
+                gameFunction = Console.ReadLine();
+                Console.WriteLine(gameFunction);
+                if (Enum.TryParse(gameFunction, out toEnum))
+                {
+                    Console.WriteLine(toEnum);
+                }
+                Play();
+
+                break;
+
             case GameStatusBase.GameStates.End:
-                Console.WriteLine("Game OVER!");
+                Console.WriteLine("Game Over");
                 Environment.Exit(0);
                 break;
-            case GameStatusBase.GameStates.Died:
-                Console.WriteLine("Ah, you died!! That sucks.");
-                GameStatusBase.currentGamestatus = GameStatusBase.GameStates.End;
-                Continue();
-                break;
-            case GameStatusBase.GameStates.play:
-                GameStatusBase.currentGamestatus = GameStatusBase.GameStates.Continue;
-                gameStatus = Console.ReadLine();
-                if (Enum.TryParse(gameStatus, out toEnum))
-                    Continue();
-                break;
-            case GameStatusBase.GameStates.start:
-                Console.WriteLine("Do you Accept the your mission?   " + " Type play. or help, for help");
-                gameStatus = Console.ReadLine();
-                if (Enum.TryParse(gameStatus, out toEnum))
-                    GameStatusBase.currentGamestatus = GameStatusBase.GameStates.Fight;
-                Continue();
-                break;
-            case GameStatusBase.GameStates.help:
-                Console.WriteLine("Type play, that will help.");
-                GameStatusBase.currentGamestatus = GameStatusBase.GameStates.start;
-                Continue();
-                break;
-            case GameStatusBase.GameStates.Fight:
-                while (true)
+
+            case GameStatusBase.GameStates.Play:
+                Level.enter();
+                Level.Encounter(2);
+                while (Game.canPlay)
                 {
-                    Cave.Enter();
-                    Random randomNum = new Random();
-                    // This is supposed to name Cave as a new level, Then you try to do the level.
                     GameTimer();
-                    Continue();
+                    Play();
+
                 }
+                Play();
                 break;
+
+            case GameStatusBase.GameStates.Died:
+                Console.WriteLine("You Died");
+                Console.WriteLine("Game Over");
+                break;
+
             default:
-                Console.WriteLine("I'm sorry i don't understand what that means.");
-                Continue();
+                Console.WriteLine("This is not a valid option");
+                Play();
                 break;
-             }
-
         }
+        Random randomNum = new Random();
+        Level.Encounter(randomNum.Next(0, Level.Enemies.Length));
+    }
+    public void GameTimer()
+    {
 
-           private LevelBase Cave = new LevelBase();
-
-// game timer
-   public static void GameTimer () {
         System.Threading.Thread.Sleep(2000);
     }
-    public int score;
+    public static bool canPlay = true;
 
-    }
-    
 
+
+}

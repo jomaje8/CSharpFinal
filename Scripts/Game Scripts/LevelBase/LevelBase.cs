@@ -1,41 +1,96 @@
 using System;
 
-public class LevelBase {
-   
-    public string StartMessage;
+public class LevelBase
+{
     public bool entranceOpen = true;
+    public static Game start = new Game();
+    public static Drop Nuts = new Drop();
+    public int coins = 6;
+    public static WeaponBase lists = new WeaponBase();
 
-    public string[] environment;
+    public string[] Enemies = { " Lion", " Sphynx", " Butterfly", " Drunk man named Bob" };
 
-    public string[] objects;
+    public void itemDrop()
+    {
+        Console.WriteLine("This Monster dropped: ");
+        string[] items = new string[3];
+        items[0] = "Guns";
+        items[1] = "Roses";
+        items[2] = "A Sack of Nuts";
 
-    public void Enter (){
-        Console.WriteLine(StartMessage);
+        foreach (string item in items)
+        {
+            Console.WriteLine(item);
+        }
     }
-    public void Cave (int i){
-        switch (i){
+    public void nutCount()
+    {
+        for (int i = 0; i < coins; i++)
+        {
+            Console.WriteLine("Nuts collected: " + i);
+        }
+    }
+    public void enter()
+    {
+        Console.WriteLine("Welcome to Asuom! Land known for its plentiful Palm Nuts");
+        Console.WriteLine("Your Story begins at the enterence of a forest.");
+    }
+
+    public void Encounter(int i)
+    {
+        switch (i)
+        {
             case 0:
-                Console.WriteLine("While entering the cave you find " + objects[i]);
-            break;
+                Console.WriteLine("You have been attacked by a" + Enemies[i]);
+                GameStatusBase.AttackFunction();
+                itemDrop();
+                nutCount();
+                Console.WriteLine("Total Nuts: ");
+                Nuts.nutCount();
+                Console.WriteLine("Ooo loot! Take some please: ");
+                lists.RunList();
+                start.Play();
+                break;
+
             case 1:
-                Console.WriteLine("You've Come across " + objects[i]);
-                if (objects[i] == "The flashlight!"){ 
-                    Game.GameTimer();
-                    Console.WriteLine("You've sucessfully found a flashlight! You turn it on and can now see.");
+                Console.WriteLine("You have been attacked by a" + Enemies[i]);
+                GameStatusBase.AttackFunction();
+                itemDrop();
+                nutCount();
+                Console.WriteLine("Total Nuts: ");
+                Nuts.nutCount();
+                Console.WriteLine("Ooo loot! Take some please: ");
+                lists.RunList();
+                start.Play();
+                break;
+
+            case 2:
+                Console.WriteLine("You have been attacked by a" + Enemies[i]);
+                GameStatusBase.AttackFunction();
+                itemDrop();
+                nutCount();
+                Console.WriteLine("Total Nuts: ");
+                Nuts.nutCount();
+                Console.WriteLine("Ooo loot! Take some please: ");
+                lists.RunList();
+                start.Play();
+                break;
+
+            case 3:
+                Console.WriteLine("You have been attacked by a" + Enemies[i]);
+                if (Enemies[i] == "Butterfly")
+                {
                 }
-            break;
-       }
-        if (i < objects.Length){
-            Console.WriteLine("You've fallen into " + objects[i]);
-            if(objects[i] == "dark wet pit"){
-                myLostLife.LoseLife();
-            }
+                Game.canPlay = false;
+                break;
+
+            default:
+                Console.WriteLine("You have encountered no enemy.");
+                start.Play();
+                break;
+
         }
-        else{
-            Console.WriteLine("Your path is clear! Find your way out!");
-        }
-        
+
     }
-    public LifeCount myLostLife = new LifeCount();
 
 }

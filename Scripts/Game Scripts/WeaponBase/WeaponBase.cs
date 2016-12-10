@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System;
 public class WeaponBase {
        //List
-    public List<Weapon> listOfWeapons;
+    public static List<Weapon> listOfWeapons;
 
     public void RunList () {
         
@@ -10,7 +10,7 @@ public class WeaponBase {
 
     }
 
-    private void ChangeList (string name , int power) {
+    public static void ChangeList (string name , int power) {
         Console.WriteLine(listOfWeapons.Count);
 
         foreach(Weapon weapon in listOfWeapons) {
