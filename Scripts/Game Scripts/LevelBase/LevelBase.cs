@@ -5,14 +5,14 @@ public class LevelBase
     public bool entranceOpen = true;
     public static Game start = new Game();
     public static Drop Nuts = new Drop();
-    public int coins = 6;
+    public int nuts = 2;
     public static WeaponBase lists = new WeaponBase();
 
     public string[] Enemies = { " Lion", " Sphynx", " Butterfly", " Drunk man named Bob" };
 
     public void itemDrop()
     {
-        Console.WriteLine("This Monster dropped: ");
+        Console.WriteLine("This Beast dropped: ");
         string[] items = new string[3];
         items[0] = "Guns";
         items[1] = "Roses";
@@ -25,7 +25,7 @@ public class LevelBase
     }
     public void nutCount()
     {
-        for (int i = 0; i < coins; i++)
+        for (int i = 0; i < nuts; i++)
         {
             Console.WriteLine("Nuts collected: " + i);
         }
@@ -36,7 +36,7 @@ public class LevelBase
         Console.WriteLine("Your Story begins at the enterence of a forest.");
     }
 
-    public void Encounter(int i)
+    public void Spot(int i)
     {
         switch (i)
         {
