@@ -38,7 +38,7 @@ public class Game
 
             case GameStatusBase.GameStates.Play:
                 Level.enter();
-                Level.Encounter(2);
+                Level.Spot(2);
                 while (Game.canPlay)
                 {
                     GameTimer();
@@ -59,7 +59,7 @@ public class Game
                 break;
         }
         Random randomNum = new Random();
-        Level.Encounter(randomNum.Next(0, Level.Enemies.Length));
+        Level.Spot(randomNum.Next(0, Level.Enemies.Length));
     }
     public void GameTimer()
     {
