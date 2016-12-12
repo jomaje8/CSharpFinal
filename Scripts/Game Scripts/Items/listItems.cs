@@ -3,14 +3,14 @@ using System;
 
 public class listItems
 {
-    public List<Items> listofWeapons;
+    public List<Items> listOfItems;
     public Game start = new Game();
 
     public void RunList()
     {
-        listofWeapons = new List<Items>();
+        listOfItems = new List<Items>();
         ChangeList("Guns", "Roses");
-        if (listofWeapons.Count == 2)
+        if (listOfItems.Count == 2)
         {
             start.Play();
         }
@@ -18,17 +18,17 @@ public class listItems
 
     public void ChangeList(string name, string power)
     {
-        Items newWeapon = new Items();
-        newWeapon.name = name;
-        newWeapon.power = power;
-        listofWeapons.Add(newWeapon);
+        Items newItem = new Items();
+        newItem.name = name;
+        newItem.power = power;
+        listOfItems.Add(newItem);
 
-        Items newWeapons = new Items();
-        newWeapon.name = Console.ReadLine();
-        newWeapon.power = Console.ReadLine();
+        Items newItems = new Items();
+        newItem.name = Console.ReadLine();
+        newItem.power = Console.ReadLine();
 
 
-        listofWeapons.Add(newWeapons);
+        listOfItems.Add(newItems);
 
         ChangeList("Guns", "Roses");
 
