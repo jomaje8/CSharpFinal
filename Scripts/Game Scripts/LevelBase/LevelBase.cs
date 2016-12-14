@@ -48,7 +48,7 @@ public class LevelBase
                 Console.WriteLine("Total Nuts: ");
                 Nuts.nutCount();
                 Console.WriteLine("Ooo loot! Take some please: ");
-                lists.RunList();
+                listItems.RunList();
                 start.Play();
                 break;
 
@@ -60,7 +60,7 @@ public class LevelBase
                 Console.WriteLine("Total Nuts: ");
                 Nuts.nutCount();
                 Console.WriteLine("Ooo loot! Take some please: ");
-                lists.RunList();
+                listItems.RunList();
                 start.Play();
                 break;
 
@@ -72,16 +72,20 @@ public class LevelBase
                 Console.WriteLine("Total Nuts: ");
                 Nuts.nutCount();
                 Console.WriteLine("Ooo loot! Take some please: ");
-                lists.RunList();
+                listItems.RunList();
                 start.Play();
                 break;
 
             case 3:
                 Console.WriteLine("You have been attacked by a" + Enemies[i]);
-                if (Enemies[i] == "Butterfly")
-                {
-                }
-                Game.canPlay = false;
+                GameStatusBase.AttackFunction();
+                itemDrop();
+                nutCount();
+                Console.WriteLine("Total Nuts: ");
+                Nuts.nutCount();
+                Console.WriteLine("Ooo loot! Take some please: ");
+                listItems.RunList();
+                start.Play();
                 break;
 
             default:

@@ -10,6 +10,7 @@ public class Game
         player.typeSelection();
         player.NameFunction();
         MagicBase.pickPower();
+        weapon.GetListOfWeapons();
         Play();
     }
     private string gameFunction = "Start";

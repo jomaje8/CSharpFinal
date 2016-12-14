@@ -3,10 +3,10 @@ using System;
 
 public class listItems
 {
-    public List<Items> listOfItems;
-    public Game start = new Game();
+    public static List<Items> listOfItems;
+    public static Game start = new Game();
 
-    public void RunList()
+    public static void RunList()
     {
         listOfItems = new List<Items>();
         ChangeList("Guns", "Roses");
@@ -16,7 +16,7 @@ public class listItems
         }
     }
 
-    public void ChangeList(string name, string power)
+    public static void ChangeList(string name, string power)
     {
         Items newItem = new Items();
         newItem.name = name;

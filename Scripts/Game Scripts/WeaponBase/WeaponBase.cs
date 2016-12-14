@@ -1,32 +1,25 @@
 using System.Collections.Generic;
 using System;
 public class WeaponBase {
-       //List
-    public static List<Weapon> listOfWeapons;
-
-    public void RunList () {
-        
+    public List<Weapon> listOfWeapons;
+    public WeaponBase () {
         listOfWeapons = new List<Weapon>();
-
+        ChangeList("Sword", 10);
+        ChangeList("Glock", 20);
+        ChangeList("Smile", 40);
+        GetListOfWeapons();
     }
-
-    public static void ChangeList (string name , int power) {
+    private void ChangeList (string name, int power) {
+        Weapon newWeapon = new Weapon();
+        newWeapon.name = name;
+        newWeapon.power = power;
+        listOfWeapons.Add(newWeapon);
+    }
+    public void GetListOfWeapons () {
         Console.WriteLine(listOfWeapons.Count);
-
         foreach(Weapon weapon in listOfWeapons) {
             Console.WriteLine(weapon.name + " is the name of your weapon.");
             Console.WriteLine(weapon.power + " is the power of your weapon.");
         }
-
-        Weapon newWeapon = new Weapon();
-        newWeapon.name = Console.ReadLine();
-        newWeapon.power = int.Parse(Console.ReadLine());
-
-        listOfWeapons.Add(newWeapon);
-
-        ChangeList("sword", 20);
-        ChangeList("Glock", 30);
-        ChangeList("smile", 2);
-        ChangeList("Rock",25);
     }
 }
