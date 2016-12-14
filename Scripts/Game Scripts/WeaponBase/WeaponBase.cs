@@ -25,5 +25,8 @@ public class WeaponBase {
         listOfWeapons.Add(newWeapon);
 
         ChangeList("sword", 20);
+        ChangeList("Glock", 30);
+        ChangeList("smile", 2);
+        ChangeList("Rock",25);
     }
 }

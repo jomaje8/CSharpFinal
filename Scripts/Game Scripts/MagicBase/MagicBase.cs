@@ -31,7 +31,7 @@ public class MagicBase
         switch (magicName)
         {
             case "Mind Control":
-                Console.WriteLine("You can't tellme what to do!");
+                Console.WriteLine("You can't tell me what to do!");
                 Magic();
                 Console.WriteLine("Power: " + (Power + 50));
                 Console.WriteLine("Strength: " + (Strength + 5));
